@@ -1,0 +1,25 @@
+{
+  "name": "portfolio-v2023.10",
+  "version": "0.0.1",
+  "description": "My new portfolio site. Started on 27.10.2023",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saivishnu725/portfolio-v2023.10.git"
+  },
+  "keywords": [
+    "portfolio",
+    "website",
+    "saivishnu725",
+    "theunconcernedape"
+  ],
+  "author": "theunconcernedape",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/saivishnu725/portfolio-v2023.10/issues"
+  },
+  "homepage": "https://github.com/saivishnu725/portfolio-v2023.10#readme"
+}

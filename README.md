@@ -1,0 +1,41 @@
+# Portfolio
+
+My new Portfolio. _Dated 27/10/2023._
+
+It might take several months to complete but it will be done for sure. I will try to my best to actually finish this project and to be as accurate to the design in my mind as possible.
+
+## Hosting
+
+1. It won't be hosted until it is completely finished
+2. After which, I "might" buy a VPS in Hetzner.
+3. The domain is going to be: theunconcernedape.me (check out my 3 year old site for now).
+
+## how to use this locally
+
+1. Install node dependencies
+
+   ```bash
+   npm install
+   ```
+
+2. a. Use nodemon to run the server
+
+   ```bash
+   nodemon
+   ```
+
+   b. Run the server manually
+
+   ```bash
+   node index.js
+   ```
+
+3. Site is live at localhost:3000. Open it in your preferred browser.
+
+## Contributors
+
+Nuh uh. No contributors for this one. You can provide issues tho.
+
+## License
+
+[GNU General Public License v2.0](https://choosealicense.com/licenses/gpl-2.0/)
