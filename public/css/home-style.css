@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  padding: 0;
+  background: black;
+}
+
+@keyframes rotate {
+  from {
+    rotate: 0deg;
+  }
+
+  50% {
+    scale: 1 1.5;
+  }
+
+  to {
+    rotate: 360deg;
+  }
+}
+
+#blob {
+  height: 34vmax;
+  aspect-ratio: 1;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  translate: -50% -50%;
+  border-radius: 50%;
+  background: linear-gradient(to right, aquamarine, mediumpurple);
+  animation: rotate 20s infinite;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+#blur {
+  height: 110%;
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  backdrop-filter: blur(12vmax);
+}
+
+.hero {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.below-hero {
+  background-color: white;
+  z-index: 10;
+  position: relative;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  /* margin-top: 0; */
+}
+
+.below-hero > h1 {
+  margin-top: 0;
+}
