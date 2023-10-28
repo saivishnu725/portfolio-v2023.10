@@ -9,6 +9,7 @@ It might take several months to complete but it will be done for sure. I will tr
 1. Design the site!! **_(NOTE: Important)_**
 2. Use express and ejs to make it _(code)_ look better.
 3. Separate data from the page (use json for data instead of hard coding).
+4. Make it responsive.
 
 ## Hosting
 
