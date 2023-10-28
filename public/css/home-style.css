@@ -50,13 +50,21 @@ body {
 
 #hack {
   color: white;
-  font-size: 5rem;
+  font-size: 2rem;
   margin: 0;
   padding: 0;
   position: absolute;
   top: 50%;
-  left: 50%;
-  translate: -50% -50%;
+  left: 25%;
+  translate: -75% -50%;
+  z-index: 3;
+}
+
+#hero-image {
+  position: absolute;
+  top: 50%;
+  right: 25%;
+  transform: translate(50%, -50%);
   z-index: 3;
 }
 
@@ -66,7 +74,6 @@ body {
   position: relative;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  /* margin-top: 0; */
 }
 
 .below-hero > h1 {

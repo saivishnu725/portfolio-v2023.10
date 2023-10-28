@@ -1,7 +1,7 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 let interval = null;
-let next = 0;
+let next = 1;
 
 document.querySelector("#hack").onclick = (event) => {
   let iteration = 0;
@@ -9,9 +9,9 @@ document.querySelector("#hack").onclick = (event) => {
   clearInterval(interval);
   interval = setInterval(() => {
     if (next == 1) {
-      event.target.style.fontSize = "4rem";
+      event.target.style.fontSize = "2rem";
     } else {
-      event.target.style.fontSize = "5rem";
+      event.target.style.fontSize = "2.5rem";
     }
     event.target.innerText = words[next]
       .split("")
