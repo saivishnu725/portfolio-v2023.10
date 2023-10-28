@@ -4,6 +4,12 @@ My new Portfolio. _Dated 27/10/2023._
 
 It might take several months to complete but it will be done for sure. I will try to my best to actually finish this project and to be as accurate to the design in my mind as possible.
 
+## Plans
+
+1. Design the site!! **_(NOTE: Important)_**
+2. Use express and ejs to make it _(code)_ look better.
+3. Separate data from the page (use json for data instead of hard coding).
+
 ## Hosting
 
 1. It won't be hosted until it is completely finished
