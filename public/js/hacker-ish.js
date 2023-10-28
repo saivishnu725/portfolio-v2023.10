@@ -6,7 +6,7 @@ let next = 0;
 document.querySelector("#hack").onclick = (event) => {
   let iteration = 0;
   let words = ["SAI VISHNU", "THE UNCONCERNED APE"];
-
+  clearInterval(interval);
   interval = setInterval(() => {
     if (next == 1) {
       event.target.style.fontSize = "4rem";
