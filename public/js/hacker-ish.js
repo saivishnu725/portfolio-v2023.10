@@ -1,9 +1,16 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 let interval = null;
-let next = 1;
-let images = ["images/personal-logo.jpg", "images/logo.png"];
+let next = 0;
+let images = ["images/personal-logo.png", "images/logo.png"];
 let words = ["SAI VISHNU", "THE UNCONCERNED APE"];
+let motto = [
+  `just a tech. <br> a small grain of sand from the beaches they left behind.`,
+  `passionate tech enthusiast. <br> currently a student. <br> trying to figure out what i want to do with life.`,
+];
+
+const heroImage = document.querySelector("#hero-image");
+const heroMotto = document.querySelector("#hero-about");
 
 document.querySelector("#hack").onclick = (event) => {
   let iteration = 0;
@@ -38,23 +45,37 @@ document.querySelector("#hack").onclick = (event) => {
 
     iteration += 1 / 3;
   }, 30);
-  const heroImage = document.getElementById("hero-image");
-
   if (document.getElementById("hack").getAttribute("data-value") == words[0]) {
     heroImage.animate(
       { opacity: 0 },
       { duration: 500, fill: "forwards" }
     ).onfinish = () => {
+      document.querySelector(".hero").style.background = "black";
       heroImage.setAttribute("src", images[0]);
       heroImage.animate({ opacity: 1 }, { duration: 500, fill: "forwards" });
+    };
+    heroMotto.animate(
+      { opacity: 0 },
+      { duration: 500, fill: "forwards" }
+    ).onfinish = () => {
+      heroMotto.innerHTML = motto[0];
+      heroMotto.animate({ opacity: 1 }, { duration: 500, fill: "forwards" });
     };
   } else {
     heroImage.animate(
       { opacity: 0 },
       { duration: 500, fill: "forwards" }
     ).onfinish = () => {
+      document.querySelector(".hero").style.background = "#222222";
       heroImage.setAttribute("src", images[1]);
       heroImage.animate({ opacity: 1 }, { duration: 500, fill: "forwards" });
+    };
+    heroMotto.animate(
+      { opacity: 0 },
+      { duration: 500, fill: "forwards" }
+    ).onfinish = () => {
+      heroMotto.innerHTML = motto[1];
+      heroMotto.animate({ opacity: 1 }, { duration: 500, fill: "forwards" });
     };
   }
 };

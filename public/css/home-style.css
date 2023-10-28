@@ -42,6 +42,7 @@ body {
 
 .hero {
   height: 100vh;
+  transition: background-color 3s;
   width: 100vw;
   background-color: black;
   border-bottom-left-radius: 5px;
@@ -66,6 +67,17 @@ body {
   right: 25%;
   transform: translate(50%, -50%);
   z-index: 3;
+}
+
+#hero-about {
+  position: absolute;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 0.8rem;
+  top: 60%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+  color: white;
 }
 
 .below-hero {
