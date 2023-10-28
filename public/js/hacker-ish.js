@@ -2,10 +2,11 @@ const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 let interval = null;
 let next = 1;
+let images = ["images/personal-logo.jpg", "images/logo.png"];
+let words = ["SAI VISHNU", "THE UNCONCERNED APE"];
 
 document.querySelector("#hack").onclick = (event) => {
   let iteration = 0;
-  let words = ["SAI VISHNU", "THE UNCONCERNED APE"];
   clearInterval(interval);
   interval = setInterval(() => {
     if (next == 1) {
@@ -37,4 +38,23 @@ document.querySelector("#hack").onclick = (event) => {
 
     iteration += 1 / 3;
   }, 30);
+  const heroImage = document.getElementById("hero-image");
+
+  if (document.getElementById("hack").getAttribute("data-value") == words[0]) {
+    heroImage.animate(
+      { opacity: 0 },
+      { duration: 500, fill: "forwards" }
+    ).onfinish = () => {
+      heroImage.setAttribute("src", images[0]);
+      heroImage.animate({ opacity: 1 }, { duration: 500, fill: "forwards" });
+    };
+  } else {
+    heroImage.animate(
+      { opacity: 0 },
+      { duration: 500, fill: "forwards" }
+    ).onfinish = () => {
+      heroImage.setAttribute("src", images[1]);
+      heroImage.animate({ opacity: 1 }, { duration: 500, fill: "forwards" });
+    };
+  }
 };
