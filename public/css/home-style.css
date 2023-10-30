@@ -2,6 +2,8 @@ body {
   margin: 0;
   padding: 0;
   background: black;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
 @keyframes rotate {
@@ -19,7 +21,7 @@ body {
 }
 
 #blob {
-  height: 34vmax;
+  height: 28vmax;
   aspect-ratio: 1;
   position: absolute;
   left: 50%;
@@ -40,6 +42,12 @@ body {
   backdrop-filter: blur(12vmax);
 }
 
+.hero-dots {
+  background: radial-gradient(rgba(255, 255, 255, 0.2) 8%, transparent 8%);
+  background-position: 0% 0%;
+  background-size: 5vmin 5vmin;
+}
+
 .hero {
   height: 100vh;
   transition: background-color 3s;
@@ -50,8 +58,9 @@ body {
 }
 
 #hack {
+  font-family: "Rubik Mono One", monospace;
   color: white;
-  font-size: 2rem;
+  font-size: 2.8rem;
   margin: 0;
   padding: 0;
   position: absolute;
@@ -70,9 +79,9 @@ body {
 }
 
 #hero-about {
+  font-family: "Courier Prime", Courier, monospace;
+  font-size: 1.2rem;
   position: absolute;
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 0.8rem;
   top: 60%;
   left: 20%;
   transform: translate(-50%, -50%);

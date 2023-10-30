@@ -1,8 +1,8 @@
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 let interval = null;
-let next = 0;
-let images = ["images/personal-logo.png", "images/logo.png"];
+let next = 1;
+let images = ["images/personal-logo-nobg.png", "images/logo.png"];
 let words = ["SAI VISHNU", "THE UNCONCERNED APE"];
 let motto = [
   `just a tech. <br> a small grain of sand from the beaches they left behind.`,
@@ -17,9 +17,9 @@ document.querySelector("#hack").onclick = (event) => {
   clearInterval(interval);
   interval = setInterval(() => {
     if (next == 1) {
-      event.target.style.fontSize = "2rem";
+      event.target.style.fontSize = "2.8rem";
     } else {
-      event.target.style.fontSize = "2.5rem";
+      event.target.style.fontSize = "3.2rem";
     }
     event.target.innerText = words[next]
       .split("")
@@ -46,11 +46,11 @@ document.querySelector("#hack").onclick = (event) => {
     iteration += 1 / 3;
   }, 30);
   if (document.getElementById("hack").getAttribute("data-value") == words[0]) {
+    console.log("first word");
     heroImage.animate(
       { opacity: 0 },
       { duration: 500, fill: "forwards" }
     ).onfinish = () => {
-      document.querySelector(".hero").style.background = "black";
       heroImage.setAttribute("src", images[0]);
       heroImage.animate({ opacity: 1 }, { duration: 500, fill: "forwards" });
     };
@@ -62,11 +62,11 @@ document.querySelector("#hack").onclick = (event) => {
       heroMotto.animate({ opacity: 1 }, { duration: 500, fill: "forwards" });
     };
   } else {
+    console.log("second word");
     heroImage.animate(
       { opacity: 0 },
       { duration: 500, fill: "forwards" }
     ).onfinish = () => {
-      document.querySelector(".hero").style.background = "#222222";
       heroImage.setAttribute("src", images[1]);
       heroImage.animate({ opacity: 1 }, { duration: 500, fill: "forwards" });
     };
