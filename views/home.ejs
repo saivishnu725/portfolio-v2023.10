@@ -31,18 +31,10 @@
       <%- include("navbar"); %>
       <div id="blob"></div>
       <div id="blur" class="hero-dots"></div>
-      <h1 data-value="THE UNCONCERNED APE" id="hack">THE UNCONCERNED APE</h1>
-      <span id="hero-about">
-        passionate tech enthusiast. <br />
-        currently a student. <br />
-        trying to figure out what i want to do with life.
-      </span>
-      <img
-        src="images/logo.png"
-        alt="one of my logo"
-        id="hero-image"
-        draggable="false"
-      />
+      <h1 id="hack"><%= data[data["listNames"][1]].name %></h1>
+      <span id="hero-about"> <%- data[data["listNames"][1]].motto %> </span>
+      <img src="<%- data[data["listNames"][1]].image %>" alt="logo"
+      id="hero-image" draggable="false" />
     </div>
     <div class="below-hero gradient-bg">
       <h1>Heading</h1>

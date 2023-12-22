@@ -1,5 +1,14 @@
 # Portfolio
 
+
+
+
+**CAUTION: NO LONGER CONTINUING WITH THIS PROJECT AS IT BECAME TOO CLUMSY AND THE DESIGN WAS OUT OF THE PLACE RIGHT FROM THE START. I AM GOING TO DO ANOTHER ATTEMPT (one could call it portfolio-V2) TO DO A MORE SIMILAR DESIGN THAT ACTUALLY MAKES SENSE.**
+
+*Link for the new codebase: https://github.com/saivishnu725/portfolio-v2023-10*
+
+
+
 My new Portfolio. _Dated 27/10/2023._
 
 It might take several months to complete but it will be done for sure. I will try to my best to actually finish this project and to be as accurate to the design in my mind as possible.

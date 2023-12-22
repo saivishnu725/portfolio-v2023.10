@@ -2,6 +2,7 @@
 
 import express from "express";
 import bodyParser from "body-parser";
+import fs from "fs";
 
 const app = express();
 
@@ -20,9 +21,12 @@ app.use(express.static("public"));
 // use ejs
 app.set("view engine", "ejs");
 
+// get data from json file
+const data = JSON.parse(fs.readFileSync("public/data/home-info.json", "utf8"));
+
 // get home page
 app.get("/", function (req, res) {
-  res.render("home");
+  res.render("home", { data: data });
 });
 
 app.listen(3000, function () {

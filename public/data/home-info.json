@@ -1,6 +1,9 @@
 {
+  "length": 2,
+  "listNames": ["saivishnu", "theunconcernedape"],
   "saivishnu": {
-    "word": "Sai Vishnu",
+    "name": "Sai Vishnu",
+    "nameUpper": "SAI VISHNU",
     "image": "images/personal-logo-nobg.png",
     "motto": "just a tech. <br> a small grain of sand from the beaches they left behind.",
     "intro": "I am a 20 year old kid who is still figuring out life. <br> I spend most of my days around tech (because it is my comfort space). <br> I also enjoy driving and roaming to random places . <br> I've recently taken a deep interest in Formula 1 (Max ftw!)",
@@ -11,10 +14,12 @@
       "Formula 1",
       "wondering about the oblivion",
       "staring at the ceiling, while listening to Taylor Swift"
-    ]
+    ],
+    "fontSize": "3.2rem"
   },
-  "unconcerned": {
-    "words": "The Unconcerned Ape",
+  "theunconcernedape": {
+    "name": "The Unconcerned Ape",
+    "nameUpper": "THE UNCONCERNED APE",
     "image": "images/logo.png",
     "motto": "passionate tech enthusiast. <br> currently a student. <br> trying to figure out what i want to do with life.",
     "intro": "I am a 20 year old BCA student tinkering around tech to find where my heart lies. <br> I am currently learning web development but I've realised that this isn't my cup of tea. <br> I feel like my heart lies in low level programming. <br> I love Linus Torvalds's contribution to the world!",
@@ -24,7 +29,7 @@
       "C Language",
       "language model",
       "Linux"
-    ]
-  },
-  "length": 2
+    ],
+    "fontSize": "2.8rem"
+  }
 }
